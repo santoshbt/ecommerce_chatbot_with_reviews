@@ -3,7 +3,7 @@ from langchain_openai import OpenAIEmbeddings
 from dotenv import load_dotenv
 import os
 import pandas as pd
-from data_converter import dataconvertor
+from ecommercebot.data_converter import dataconvertor
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 load_dotenv()

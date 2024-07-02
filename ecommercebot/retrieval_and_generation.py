@@ -5,7 +5,7 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
-from ingestion import ingestdata
+from ecommercebot.ingestion import ingestdata
 load_dotenv()
 
 
@@ -16,7 +16,8 @@ def generation(vstore):
     You are an ecommercebot bot is an expert in product recommendations and customer queries.
     It analyzes product titles and reviews to provide accurate and helpful responses.
     Ensure your answers are relevant to the product context and refrain from staying off-topic.
-    Your responses should be concise and informative.
+    Your responses should be concise and informative. If you are getting any greeting message,
+    please reply back only with the friendly greeting.
 
     CONTEXT:
     {context}
